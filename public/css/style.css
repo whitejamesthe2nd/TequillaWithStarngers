@@ -1,0 +1,12 @@
+
+body {
+  background-color:blanchedalmond  ;
+  /* #24ac53 */
+
+}
+.div-events{
+  display: grid;
+  justify-content: center;
+  margin-right: 100px;
+  color: rgb(125, 219, 125);
+}

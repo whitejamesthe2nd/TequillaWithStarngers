@@ -1,0 +1,29 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        script(type="text/javascript" src="../public/js/tequilaTimes.js")
+        //- link(rel="stylesheet" href="../public/css/event.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css")
+        link(rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous")
+        link(rel="stylesheet" href="../public/css/tequilaTimes.css")
+        
+        //- script(defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js")
+        title Events page
+    body
+        include nav-bar.pug
+        div(class='page-container')
+            div(class='head-parent move-banner')
+                div(class='head-card color-me')
+                    h2(class='color-me') Good Converstaions, Better Stories
+            div(class='content-container')
+                div(class='header-1')
+                    h2(class='color-me') Tequila With Strangers is Strangers, Sharing Tequila
+                div(class='content-1')
+                    p For a couple hours, meet up with five stangers and discuss the strange times we live in.</br>Everyones got a story and during these trying times we want to help you meet with others and</br>share your story. I personally know I have had some very memorable and sometimes not with a </br>couple shots of tequilla and some new friends. I wish you many Tequilla Times in the future.
+                div(class='header-2')
+                    h2(class='color-me') Here are the Upcoming Tequila Times 
+            div(class='div-events')
+                div(id='all-events')
+        div(class='footer-container') 
+            include footer.pug
