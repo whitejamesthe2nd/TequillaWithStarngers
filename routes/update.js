@@ -7,7 +7,7 @@ const { Attendee, City, Event, User } = require('../models');
 const router = express.Router();
 
 router.use(cookieParser());
-router.use(express.urlencoded());
+// router.use(express.urlencoded());
 const csrfProtection = csrf({ cookie: true });
 
 
