@@ -18,7 +18,6 @@ module.exports = {
     username,
     password,
     database,
-    host,
     dialect: 'postgres',
     seederStorage: 'sequelize',
   }
