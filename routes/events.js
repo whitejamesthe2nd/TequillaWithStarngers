@@ -7,7 +7,7 @@ const { Attendee, City, Event, User } = require('../models');
 const router = express.Router();
 
 router.use(cookieParser());
-router.use(express.urlencoded());
+// router.use(express.urlencoded());
 const csrfProtection = csrf({ cookie: true });
 // const csrfProtection = require("csurf")({ cookie: true });
 
@@ -87,7 +87,7 @@ router.get('/who-is-logged/:userId(\\d+)/:eventId(\\d+)', asyncHandler(async(req
 }));
 
 //router for leave button
-router.post('/leave/:userId(\\d+)/:eventId(\\d+)', 
+router.post('/leave/:userId(\\d+)/:eventId(\\d+)',
 asyncHandler(async(req, res) => {
   const {userId, eventId } = req.params;
   await Attendee.destroy({
@@ -102,7 +102,7 @@ asyncHandler(async(req, res) => {
 }));
 
 //router for delete event
-router.post('/delete/:id(\\d+)', 
+router.post('/delete/:id(\\d+)',
 asyncHandler(async (req, res) => {
   const id = parseInt(req.params.id);
   await Attendee.destroy({
@@ -137,7 +137,7 @@ router.post('/', csrfProtection, asyncHandler(async (req, res) => {
     description,
     numOfGuests,
     limit } = req.body;
-  
+
   const newEvent = await Event.create({ cityId, date, time, venue, address, name, description, hostId, numOfGuests, limit })
   res.redirect('/home');
 }));
