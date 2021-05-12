@@ -19,7 +19,5 @@
     "dialect": "postgres",
     "seederStorage": "sequelize",
     "use_env_variable": "DATABASE_URL",
-    "username": "teq_app",
-    "password": "teq123"
   }
 }
