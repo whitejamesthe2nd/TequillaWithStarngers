@@ -20,6 +20,7 @@
     "seederStorage": "sequelize",
     "use_env_variable": "DATABASE_URL",
     "username": "teq_app",
-    "password": "teq123"
+    "password": "teq123",
+    "host": "127.0.0.1"
   }
 }
